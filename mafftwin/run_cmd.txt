@@ -1,0 +1,34 @@
+link:
+https://mafft.cbrc.jp/alignment/software/
+donwload the windows version, unzip and directly use.
+
+
+linux compiled version: https://mafft.cbrc.jp/alignment/software/linuxportable.html
+
+--clustalout
+Output format: clustal format. Default: off (fasta format)
+--inputorder
+Output order: same as input. Default: on
+
+mafft --localpair --maxiterate 1000 --quiet --nuc inSeqExample.txt 
+# results: indel is the right
+# good for STRs
+>s1
+atgcatgcatgcatgcatgcatgcatgcatgc
+>s2
+atgcatgcatgcatgcatgcatgcatgc----
+>s3
+atgcatgcatgcatgcatgcatgc--------
+
+mafft --globalpair --maxiterate 1000 --quiet --nuc inSeqExample.txt 
+#results: indel is in the middle
+>s1
+atgcatgcatgcatgcatgcatgcatgcatgc
+>s2
+atgcatgcatgcatgc---tatgcatgcatgc
+>s3
+atgcatgcatg--------catgcatgcatgc
+
+
+##run with windows powershell
+powershell.exe -ExecutionPolicy AllSigned C:\Users\xw0148\Downloads\mafft-7.490-win64-signed\mafft-win\mafft-signed.ps1 --localpair --maxiterate 1000 --quiet --nuc inSeqExample.txt
