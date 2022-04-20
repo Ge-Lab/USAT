@@ -1,0 +1,3 @@
+Chrom	ChromStart	ChromEnd	Name	Left_offset	Right_offset	Basic_motif_period	Ref_hap_length	Motif	Ref_allele	Inner_offset
+chrY	9684379	9684443	DYS19	3	3	4	60	[TCTA]n ccta [TCTA]n	15	4
+chrX	67757344	67757400	DXS10074	3	3	4	56	[AAGA]n [AAGG]n [AAGA]n	14	0
