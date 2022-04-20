@@ -1,0 +1,1 @@
+mafft-7.490-win64-signed
